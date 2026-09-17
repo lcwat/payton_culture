@@ -1,0 +1,53 @@
+---
+title: "notes_9_14_26"
+author: "Luke"
+date: "2026-09-14"
+output: html_document
+editor_options: 
+  markdown: 
+    wrap: 72
+---
+
+# Culture fit replication analyses
+
+for 1st set of analyses, want to compare cross level interaction between
+an individual's avoidance attachment score and how collectivist their
+country is, but comparing the different measures of collectivism
+
+## Model comparison and missing data
+
+some countries have only have some measure of collect, try and see how
+big the subset of countries with all measures is. hopefully around 25?
+could end up losing a lot of collectivist countries, not a huge
+difference in the distribution of collectivism after dropping listwise
+could also be misinterpreting based on large samples from particular
+countries like the US
+
+usually a tradeoff between data quality, year sampled, and broad
+applicability that's why some measures have more countries
+
+1.  grab Patrick's code from his beocat directory to run bayesian
+    ordbetareg models for section 1.4-2.4 (ordbetareg for each
+    collectivism meas)
+
+    -   perhaps combine them to do proper model fit comparison? need to
+        dive deeper into nation distribution and sample sizes after
+        listwise deletion
+
+2.  parse apart results, particularly looking for cross level culture
+    individual interaction between collect. and avoid.
+
+    -   assess model fits (ppc, stacking weights), make figures
+        (marginaleffects), raw output tables
+    -   once done, make meeting to discuss results
+
+## Pt. 2: Exploratory response surface modeling
+
+-   comparing individual level avoidance with nation level avoidance to
+    see how those in tandem predict relationship satisfaction
+-   Du et al 2021 used this approach, could have some code
+
+## As you work
+
+take notes on what you are doing to start writing analyses (methods) and
+results section
